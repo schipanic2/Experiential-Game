@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*iphone 6 plus size: 414 x 736*/
+/*iphone 6 plus size: 750 x 1334*/
+
+/*#mountain {*/
+/*    max-width: 414px;*/
+/*    height: 736px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+img {
+    position: absolute;
+}
+
+/*#mtn-background {*/
+/*    height: 100%;*/
+    
+/*}*/
+
+#ridge1 {
+    bottom: 0vh;
+    z-index: 10;
+}
+
+#ridge2 {
+    bottom: 0vh;
+    z-index: 9;
+}
+
+#ridge3 {
+    bottom: 40vh;
+    z-index: 8;
+}
+
+#ridge4 {
+    bottom: 46vh;
+    margin-left: 31.2%;
+    width: 50.2%;
+    z-index: 7;
+}
+
+#sun {
+    bottom: 65vh;
+    margin-left: 32%;
+    width: 35%;    
+    z-index: 6;
+}
+
+
+#colr1 {
+    bottom: 0vh;
+    margin-left: 69.6%;
+    width: 30%;    
+    z-index: 10;
+}
+
+#colr2{
+    bottom: 29vh;
+    margin-left: 71%;
+    width: 20%;    
+    z-index: 9;
+}
+
+#colr3{
+    bottom: 48vh;
+    margin-left: 60.6%;
+    width: 17%;    
+    z-index: 7;
+}
+
+#colr4{
+    bottom: 50vh;
+    margin-left: 74%;
+    width: 26%;    
+    z-index: 8;
+}
+
+
+#coll1{
+    bottom: 0vh;
+    margin-left: 4%;
+    width: 22%;    
+    z-index: 10;
+}
+
+#coll2{
+    bottom: 10vh;
+    margin-left: 11%;
+    width: 23%;    
+    z-index: 9;
+}
+
+#coll3{
+    bottom: 26vh;
+    margin-left: 0;
+    width: 20%;    
+    z-index: 8;
+}
+
+#coll4{
+    bottom: 46vh;
+    margin-left: 10%;
+    width: 28%;    
+    z-index: 7;
+}
+
+#coll5 {
+    bottom: 62vh;
+    margin-left: 0%;
+    width: 30%;    
+    z-index: 6;
+}
+
+#road {
+    bottom: 0;
+    margin-left: 40%;
+    width: 20%;    
+    z-index: 10;
+}
+
+#step1 {
+    bottom: 1vh;
+    margin-left: 55%;
+    width: 25%;    
+    z-index: 10;    
+}
+
+#step2 {
+    bottom: 10vh;
+    margin-left: 40%;
+    width: 22%;    
+    z-index: 10;     
+}
+
+#step3 {
+    bottom: 19vh;
+    margin-left: 28%;
+    width: 19%;    
+    z-index: 10;    
+}
+
+#step4 {
+    bottom: 27vh;
+    margin-left: 21%;
+    width: 16%;    
+    z-index: 10;        
+}
+
+#step5 {
+    bottom: 34vh;
+    margin-left: 22%;
+    width: 13%;    
+    z-index: 10;     
+}
+
+#surf {
+    bottom: 35vh;
+    margin-left: 0;
+    width: 100%;    
+    z-index: 10; 
+}
+
+#mtn1 {
+    bottom: 54vh;
+    margin-left: 12%;
+    width: 70%;    
+    z-index: 9; 
+}
+
+#mtn2 {
+    bottom: 54vh;
+    margin-left: 15%;
+    width: 85%;    
+    z-index: 8; 
+}
+
+#volcano {
+    bottom: 54vh;
+    margin-left: 0;
+    width: 100%;    
+    z-index: 7; 
+}
+
+#lava {
+    bottom: 66vh;
+    margin-left: 39.8%;
+    width: 24%;    
+    z-index: 10; 
+}
