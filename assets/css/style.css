@@ -222,7 +222,7 @@ img {
     z-index: 8; 
 }
 
-#volcano {
+#volcanoImg {
     bottom: 54vh;
     margin-left: 0;
     width: 100%;    
@@ -234,4 +234,8 @@ img {
     margin-left: 39.8%;
     width: 24%;    
     z-index: 10; 
+}
+
+.hide {
+    opacity: 0;
 }
