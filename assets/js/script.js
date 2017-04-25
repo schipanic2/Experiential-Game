@@ -1,11 +1,14 @@
 /* global $ */
 $(document).ready(function(){
+    playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Forest%20Night.mp3");
     showBackground("mountain", 550);
     showQuestionView("mountain");
 
     $(document).on('click', '#mountain .question-option', function(){
         $('#mountain').fadeOut('slow');
         $('#canyon').fadeIn('fast');
+        pauseAudio();
+        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Space%20Explorers.mp3");        
         showBackground("canyon", 300);
         showQuestionView("canyon");
     });
@@ -13,6 +16,8 @@ $(document).ready(function(){
     $(document).on('click', '#canyon .question-option', function(){
         $('#canyon').fadeOut('slow');
         $('#volcano').fadeIn('fast');
+        pauseAudio();
+        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Stratosphere.mp3");         
         showBackground("volcano", 300);
         showQuestionView("volcano");
     });
@@ -20,6 +25,8 @@ $(document).ready(function(){
     $(document).on('click', '#volcano .question-option', function(){
         $('#volcano').fadeOut('slow');
         $('#ending').fadeIn('fast');
+        pauseAudio();
+        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");         
     });
 
 });
@@ -71,3 +78,32 @@ function showQuestionView(divID){
         }, 1800);    
     }, 4200);
 }
+
+var audioElement = document.createElement('audio');
+
+function playAudio(audioSrc)
+{
+    audioElement.setAttribute('src', audioSrc);
+	audioElement.load;
+	audioElement.play();
+}
+
+function pauseAudio()
+{
+	audioElement.pause();
+}
+
+/* function similar to sleep() in Java
+http://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo() {
+  console.log('Taking a break...');
+  await sleep(2000);
+  console.log('Two second later');
+}
+
+demo();
+*/
