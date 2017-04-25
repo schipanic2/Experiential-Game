@@ -1,5 +1,7 @@
 /* global $ */
 $(document).ready(function(){
+    $("body").removeClass("hide").hide().fadeIn('slow');
+    
     playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Forest%20Night.mp3");
     showBackground("mountain", 550);
     showQuestionView("mountain");
@@ -25,10 +27,14 @@ $(document).ready(function(){
     $(document).on('click', '#volcano .question-option', function(){
         $('#volcano').fadeOut('slow');
         $('#ending').fadeIn('fast');
+        $('#tryagainBtn').fadeIn('fast');
         pauseAudio();
         playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");         
     });
 
+    $(document).on('click', '#tryagainBtn', function(){
+        location.reload();
+    });
 });
 
 function showBackground(divID, interval){
