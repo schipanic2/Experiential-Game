@@ -1,13 +1,30 @@
 /* global $ */
 $(document).ready(function(){
     showBackground("mountain", 550);
-    showQuestionView("mountain", 600);
-    // showBackground("canyon", 400);
-    // showBackground("volcano", 500);
+    showQuestionView("mountain");
+
+    $(document).on('click', '#mountain .question-option', function(){
+        $('#mountain').fadeOut('slow');
+        $('#canyon').fadeIn('fast');
+        showBackground("canyon", 300);
+        showQuestionView("canyon");
+    });
+
+    $(document).on('click', '#canyon .question-option', function(){
+        $('#canyon').fadeOut('slow');
+        $('#volcano').fadeIn('fast');
+        showBackground("volcano", 300);
+        showQuestionView("volcano");
+    });
+
+    $(document).on('click', '#volcano .question-option', function(){
+        $('#volcano').fadeOut('slow');
+        $('#ending').fadeIn('fast');
+    });
 
 });
 
-function showBackground(divID, timeoutInterval){
+function showBackground(divID, interval){
     divID = "#"+divID;
     var backgroundID = "";
     var imgArray = [];
@@ -25,24 +42,32 @@ function showBackground(divID, timeoutInterval){
             (function(index) {
                 setTimeout(function() { 
                     $("#"+imgArray[index]).addClass('animated fadeInUp');
-                }, i * timeoutInterval);
+                }, i * interval);
             })(i);
         }
     });
 }
 
-function showQuestionView(divID, timeoutInterval){
+function showQuestionView(divID){
     divID = "#"+divID;
     var $questionHeader = $(divID+">.question-view").find('h1');
     var $questionBox = $(divID+">.question-view").find('.question-box');
-    var $questionOptions = $(divID+">.question-view").find('.question-option');
-    $questionHeader.addClass('animated fadeInUp');
-    $questionBox.addClass('animated fadeInUp');
+    var $questionOptions = $(divID+">.question-view").find('.question-option');    
     
-    $.each($questionOptions, function (i) {
-        setTimeout(function() {
-            $(this).addClass('animated fadeInLeft');
-        }.bind(this), i * timeoutInterval);
-    });    
-    
+    setTimeout(function(){
+        setTimeout(function(){
+            $questionHeader.addClass('animated fadeInUp');            
+        }, 300);
+        setTimeout(function(){
+            $questionBox.addClass('animated fadeInUp');
+        }, 1200);         
+        setTimeout(function(){
+            $.each($questionOptions, function (i) {
+                $(this).removeClass('remove').hide();
+                setTimeout(function() {
+                    $(this).show().addClass('animated fadeInLeft');
+                }.bind(this), i * 400);
+            });            
+        }, 1800);    
+    }, 4200);
 }

@@ -233,6 +233,10 @@ img {
     opacity: 0;
 }
 
+.remove {
+    display: none;
+}
+
 .question-view {
     position: absolute;
     z-index: 15;
