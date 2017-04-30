@@ -48,22 +48,15 @@ table {
 }
 
 /*iphone 6 plus size: 414 x 736*/
-/*iphone 6 plus size: 750 x 1334*/
-
-/*#mountain {*/
-/*    max-width: 414px;*/
-/*    height: 736px;*/
-/*    margin: 0 auto;*/
-/*}*/
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
 
 img {
     position: absolute;
 }
-
-/*#mtn-background {*/
-/*    height: 100%;*/
-    
-/*}*/
 
 #ridge1 {
     bottom: 0vh;
@@ -222,7 +215,7 @@ img {
     z-index: 8; 
 }
 
-#volcano {
+#volcanoImg {
     bottom: 54vh;
     margin-left: 0;
     width: 100%;    
@@ -234,4 +227,69 @@ img {
     margin-left: 39.8%;
     width: 24%;    
     z-index: 10; 
+}
+
+.hide {
+    opacity: 0;
+}
+
+.remove {
+    display: none;
+}
+
+.question-view {
+    position: absolute;
+    z-index: 15;
+}
+
+.question-view h1 {
+    width: 85%;
+    margin-left: 8%;
+    margin-bottom: 10%;
+    padding-top: 8%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.question-box {
+    background-color: rgba(59,59,60,.65);
+    padding: 8% 10%;
+    text-align: center;
+    color: #00F19C;
+    line-height: 1.6;
+    font-size: 50px;
+    margin-bottom: 8%;
+    font-weight: 200;
+}
+
+.question-option {
+    width: 78vw;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: rgba(59,59,60,.65);
+    padding: 6%;
+    font-size: 40px;
+    margin-bottom: 3%;
+    font-weight: 200;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+#tryagainBtn {
+    text-align: center;
+    width: 78vw;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: rgba(59,59,60,.65);
+    padding: 6%;
+    font-size: 55px;
+    margin-bottom: 3%;
+    font-weight: 800;
+    cursor: pointer;
+    line-height: 1.2;
+    z-index: 999;
 }
