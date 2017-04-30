@@ -27,9 +27,11 @@ $(document).ready(function(){
     $(document).on('click', '#volcano .question-option', function(){
         $('#volcano').fadeOut('slow');
         $('#ending').fadeIn('fast');
-        $('#tryagainBtn').fadeIn('fast');
         pauseAudio();
-        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");         
+        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");
+        showBackground("ending", 300);
+        showQuestionView("ending");
+        $('#tryagainBtn').fadeIn('fast');
     });
 
     $(document).on('click', '#tryagainBtn', function(){
