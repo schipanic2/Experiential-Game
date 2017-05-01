@@ -10,7 +10,7 @@ $(document).ready(function(){
         $('#mountain').fadeOut('slow');
         $('#canyon').fadeIn('fast');
         pauseAudio();
-        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Space%20Explorers.mp3");        
+        playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Space%20Explorers.mp3");
         showBackground("canyon", 300);
         showQuestionView("canyon");
     });
@@ -26,11 +26,11 @@ $(document).ready(function(){
 
     $(document).on('click', '#volcano .question-option', function(){
         $('#volcano').fadeOut('slow');
-        $('#ending').fadeIn('fast');
+        $('#snow').fadeIn('fast');
         pauseAudio();
         playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");
-        showBackground("ending", 300);
-        showQuestionView("ending");
+        showBackground("snow", 300);
+        showQuestionView("snow");
         $('#tryagainBtn').fadeIn('fast');
     });
 
@@ -74,6 +74,7 @@ function showQuestionView(divID){
             $questionHeader.addClass('animated fadeInUp');            
         }, 300);
         setTimeout(function(){
+            $questionBox.removeClass('remove');
             $questionBox.addClass('animated fadeInUp');
         }, 1200);         
         setTimeout(function(){

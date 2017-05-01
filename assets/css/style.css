@@ -244,7 +244,8 @@ img {
 
 .question-view h1 {
     width: 85%;
-    margin-left: 8%;
+    /*margin-left: 8%;*/
+    margin: 0 auto;
     margin-bottom: 10%;
     padding-top: 8%;
     text-align: center;
@@ -281,10 +282,10 @@ img {
 
 #tryagainBtn {
     text-align: center;
-    width: 78vw;
+    /*width: 78vw;*/
     margin: 0 auto;
     border-radius: 12px;
-    background-color: rgba(59,59,60,.65);
+    /*background-color: rgba(59,59,60,.65);*/
     padding: 6%;
     font-size: 55px;
     margin-bottom: 3%;
@@ -292,4 +293,104 @@ img {
     cursor: pointer;
     line-height: 1.2;
     z-index: 999;
+}
+
+#tree-row1-1 {
+    bottom: 0vh;
+    margin-left: 0;
+    width: 60%;
+    z-index: 10;
+}
+
+#tree-row1-2 {
+    bottom: 0vh;
+    margin-left: 40%;
+    width: 60%;
+    z-index: 9;
+}
+
+#tree-row2-1 {
+    bottom: 40vh;
+    margin-left: 10%;
+    width: 40%;
+    z-index: 8;
+}
+
+#tree-row3-1 {
+    bottom: 55vh;
+    margin-left: 0;
+    width: 40%;
+    z-index: 7;
+}
+
+#tree-row3-2 {
+    bottom: 59vh;
+    margin-left: 20%;
+    width: 35%;
+    z-index: 2;
+}
+
+#tree-row3-3 {
+    bottom: 39vh;
+    margin-left: 40%;
+    width: 40%;
+    z-index: 6;
+}
+
+#tree-row3-4 {
+    bottom: 52vh;
+    margin-left: 50%;
+    width: 50%;
+    z-index: 7;
+}
+
+#snow h1 {
+    /*color: #D797DB;*/
+    background-color: rgba(59,59,60,.65);
+    margin-top: 8%;
+    padding: 2%;
+    width: 96%;
+}
+
+#snow .question-box {
+    padding: 5% 6.5%;
+}
+
+#snow .question-view {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#snow .question-view .question-option {
+    width: 37vw;
+    height: 13vh;
+    text-align: center;
+    /*margin: 0 auto;*/
+    border-radius: 0;
+    background-color: rgba(255,255,255,.65);
+    background-color: #fff;
+    padding: 5%;
+    font-size: 45px;
+    margin-bottom: 3%;
+    font-weight: 400;
+    cursor: auto;
+    line-height: 1.2;
+    color: #3b3b3c;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+#snow .question-view .tryagain {
+    /*width: 100vw;*/
+    height: 13vh;
+    text-align: center;
+    /*margin: 0 auto;*/
+    margin-bottom: 0;
+    border-radius: 12px;
+    background-color: rgba(59,59,60,.65);
+    color: #fff;
 }

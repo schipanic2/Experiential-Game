@@ -19,7 +19,7 @@
 		<img src="assets/images/mountain/sun.svg" id="sun" class="hide">
 		<div class="question-view">
 			<h1 class="hide">You are now entering Emerald Mountains</h1>
-			<div class="question-box hide">
+			<div class="question-box remove">
 				A crooked looking man offers you the “deal of a lifetime”. In exchange for the gems in your pocket, he will give you immense power.
 			</div>
 			<div class="question-option remove">
@@ -51,7 +51,7 @@
 		<img src="assets/images/canyon/road.svg" id="road" class="hide">
 		<div class="question-view">
 			<h1 class="hide">You are now entering the Citrine Canyon</h1>
-			<div class="question-box hide">
+			<div class="question-box remove">
 				A curious looking crow sits on a dead tree nearby. "What purpose do you hope to achieve by coming here?" The crow squawks.
 			</div>
 			<div class="question-option remove">
@@ -83,7 +83,7 @@
 		<img src="assets/images/volcano/lava.svg" id="lava" class="hide">
 		<div class="question-view">
 			<h1 class="hide">You are now nearing the Tourmaline Volcano</h1>
-			<div class="question-box hide">
+			<div class="question-box remove">
 				The air is thick with the smell of sulfur and salt. 
 				The heat emanating from the volcano brushes your across your face and you feel a sense of anxiety rush through your body. 
 				You choose to..
@@ -103,17 +103,23 @@
 		</div>
 	</div>
 	
-	<div id="ending">
+	<div id="snow">
 		<!--Game ending goes here-->
 		<!--Probably good to give some sort of ending story-->
 		<!--Would also be good to have a button that allowed the player to play again (for the purposes of VCOM 462 anyways)-->
+		<img src="assets/images/snow/background.svg" id="snow-background" class="hide">
+		<img src="assets/images/snow/tree-row1-1.svg" id="tree-row1-1" class="hide">
+		<img src="assets/images/snow/tree-row1-2.svg" id="tree-row1-2" class="hide">
+		<img src="assets/images/snow/tree-row2-1.svg" id="tree-row2-1" class="hide">
+		<img src="assets/images/snow/tree-row3-1.svg" id="tree-row3-1" class="hide">
+		<img src="assets/images/snow/tree-row3-2.svg" id="tree-row3-2" class="hide">
+		<img src="assets/images/snow/tree-row3-3.svg" id="tree-row3-3" class="hide">
+		<img src="assets/images/snow/tree-row3-4.svg" id="tree-row3-4" class="hide">
 		<div class="question-view">
 			<h1 class="hide">Congratulations!</h1>
 			<div class="question-box hide">
-				You have managed to achieve the ending of "Reuniting the kingdom". 
-				Though it was an arduous journey, you have managed to collect all the gems, restore the secret power of your ancestors,
-				and reunited the kingdom under one banner.
-				During this trip, you...
+				You earned the ending: "Reuniting the Kingdom". 
+				Your greatest accolades are..
 			</div>
 			<div class="question-option remove">
 				Killed 14 creatures; What a bloodthirsty person!
@@ -127,7 +133,10 @@
 			<div class="question-option remove">
 				General morality was: "Misguided hero".
 			</div>
-			<div id="tryagainBtn" class="remove">Want to Play Again?</div>
+			<div class="question-option tryagain remove">
+				<div id="tryagainBtn" class="remove">Want to Play Again?</div>
+			</div>
+			
 		</div>	
 	</div>
 	
