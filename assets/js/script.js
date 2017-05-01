@@ -30,8 +30,9 @@ $(document).ready(function(){
         pauseAudio();
         playAudio("//gamesounds.xyz/Public%20Domain/Cinematic/Epilogue.mp3");
         showBackground("snow", 300);
-        showQuestionView("snow");
-        $('#tryagainBtn').fadeIn('fast');
+        
+        showAchievementView("snow");
+        // $('#tryagainBtn').fadeIn('fast');
     });
 
     $(document).on('click', '#tryagainBtn', function(){
@@ -88,10 +89,49 @@ function showQuestionView(divID){
     }, 4200);
 }
 
+function showAchievementView(divID){
+    console.log("testing");
+    divID = "#"+divID;
+    var $questionHeader = $(divID+">.question-view").find('h1');
+    var $questionBox = $(divID+">.question-view").find('.question-box');
+    var $achievementRow = $(divID+">.question-view").find('.achievement-row');    
+    var $achievementsbox = $(divID+">.question-view").find('.achievements-box');    
+
+    // $('.achievements-box').removeClass('remove');
+    
+    setTimeout(function(){
+        setTimeout(function(){
+            $questionHeader.addClass('animated fadeInUp');            
+        }, 300);
+        setTimeout(function(){
+            $questionBox.removeClass('hide remove');
+            $questionBox.addClass('animated fadeInUp');
+        }, 1200);       
+        setTimeout(function(){
+            $achievementsbox.removeClass('remove');
+            $achievementsbox.addClass('animated fadeInUp');
+        }, 2000); 
+        // setTimeout(function(){
+        //     $.each($achievementRow, function (i) {
+        //         console.log("testing achievementRow");
+        //         $(this).removeClass('remove').hide();
+        //         setTimeout(function() {
+        //             $(this).show().addClass('animated fadeIn');
+        //         }.bind(this), i * 400);
+        //     });            
+        // }, 2000);
+        setTimeout(function(){
+            $('#tryagainBtn').removeClass('remove').show();
+        }, 3000);         
+    }, 3800);
+}
+
 var audioElement = document.createElement('audio');
+    
 
 function playAudio(audioSrc)
 {
+    audioElement.volume = 0.1;
     audioElement.setAttribute('src', audioSrc);
 	audioElement.load;
 	audioElement.play();

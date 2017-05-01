@@ -242,12 +242,11 @@ img {
     z-index: 15;
 }
 
-.question-view h1 {
+h1 {
     width: 85%;
     /*margin-left: 8%;*/
     margin: 0 auto;
-    margin-bottom: 10%;
-    padding-top: 8%;
+    padding: 8% 0;
     text-align: center;
     font-size: 60px;
     font-weight: 700;
@@ -263,8 +262,12 @@ img {
     color: #00F19C;
     line-height: 1.6;
     font-size: 50px;
-    margin-bottom: 8%;
+    margin-bottom: 7.2%;
     font-weight: 200;
+}
+
+#snow .question-box {
+    color: #fff;
 }
 
 .question-option {
@@ -282,10 +285,10 @@ img {
 
 #tryagainBtn {
     text-align: center;
-    /*width: 78vw;*/
+    width: 78vw;
     margin: 0 auto;
     border-radius: 12px;
-    /*background-color: rgba(59,59,60,.65);*/
+    background-color: rgba(59,59,60,.65);
     padding: 6%;
     font-size: 55px;
     margin-bottom: 3%;
@@ -311,7 +314,7 @@ img {
 
 #tree-row2-1 {
     bottom: 40vh;
-    margin-left: 10%;
+    margin-left: 4%;
     width: 40%;
     z-index: 8;
 }
@@ -332,7 +335,7 @@ img {
 
 #tree-row3-3 {
     bottom: 39vh;
-    margin-left: 40%;
+    margin-left: 37%;
     width: 40%;
     z-index: 6;
 }
@@ -341,27 +344,28 @@ img {
     bottom: 52vh;
     margin-left: 50%;
     width: 50%;
-    z-index: 7;
+    z-index: 5;
 }
 
 #snow h1 {
-    /*color: #D797DB;*/
-    background-color: rgba(59,59,60,.65);
-    margin-top: 8%;
-    padding: 2%;
-    width: 96%;
+    /*color: #cc26cb;*/
+    font-size: 70px;
+    background-color: rgba(213,153,219,.65);
+    margin: 8% 0;
+    padding: 2% 0;
+    width: 100%;
 }
 
 #snow .question-box {
     padding: 5% 6.5%;
 }
 
-#snow .question-view {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.achievements-box {
+    width: 98vw;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.93);
+    padding: 2% 0;
+    margin-bottom: 11%;
 }
 
 #snow .question-view .question-option {
@@ -393,4 +397,23 @@ img {
     border-radius: 12px;
     background-color: rgba(59,59,60,.65);
     color: #fff;
+}
+
+#snow .achievement-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    margin: 7% 4%;
+    font-size: 45px;
+    color: #3b3b3c;
+}
+
+#snow .achievement-row img {
+    position: relative;
+    z-index: 99;
+    width: 10%;
+    height: 10%;
+    margin: 0 10% 0 2%;
 }
